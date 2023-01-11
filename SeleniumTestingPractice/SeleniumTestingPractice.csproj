@@ -70,6 +70,7 @@
     <Compile Include="Pages\Hovers.cs" />
     <Compile Include="Pages\JavaScriptAlerts.cs" />
     <Compile Include="Pages\MultipleWindows.cs" />
+    <Compile Include="Pages\NotificationMessages.cs" />
     <Compile Include="TestCases.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

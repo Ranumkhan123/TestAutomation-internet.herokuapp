@@ -20,6 +20,7 @@ namespace SeleniumTestingPractice
         Hovers hovers = new Hovers();
         JavaScriptAlerts alerts = new JavaScriptAlerts();
         MultipleWindows multiplewindows = new MultipleWindows();
+        NotificationMessages notificationmessage = new NotificationMessages();
 
 
         [TestMethod]
@@ -151,6 +152,16 @@ namespace SeleniumTestingPractice
 
             CorePage.SeleniumInit();
             multiplewindows.MultipleWindowsPage("https://the-internet.herokuapp.com/");
+
+            CorePage.driver.Close();
+        }
+
+        [TestMethod]
+        public void NotificationMessagesTestCase()
+        {
+
+            CorePage.SeleniumInit();
+            notificationmessage.NotificationMessagesPage("https://the-internet.herokuapp.com/");
 
             CorePage.driver.Close();
         }
