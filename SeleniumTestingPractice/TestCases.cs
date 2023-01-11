@@ -19,6 +19,7 @@ namespace SeleniumTestingPractice
         HorizontalSlider horizontalslider = new HorizontalSlider();
         Hovers hovers = new Hovers();
         JavaScriptAlerts alerts = new JavaScriptAlerts();
+        MultipleWindows multiplewindows = new MultipleWindows();
 
 
         [TestMethod]
@@ -140,6 +141,16 @@ namespace SeleniumTestingPractice
 
             CorePage.SeleniumInit();
             alerts.JavaScriptAlertsPage("https://the-internet.herokuapp.com/");
+
+            CorePage.driver.Close();
+        }
+
+        [TestMethod]
+        public void MultipleWindowsTestCase()
+        {
+
+            CorePage.SeleniumInit();
+            multiplewindows.MultipleWindowsPage("https://the-internet.herokuapp.com/");
 
             CorePage.driver.Close();
         }
